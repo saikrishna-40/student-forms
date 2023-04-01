@@ -82,11 +82,7 @@ public class rf1 {
 		lblNewLabel_1_3.setBounds(98, 371, 72, 30);
 		frame.getContentPane().add(lblNewLabel_1_3);
 		
-//		Container btnNewButton = new JButton("Submit"); ;
-//		btnNewButton.setFont(new Font("Arial", Font.BOLD, 22));
-//		btnNewButton.setBounds(318, 455, 121, 23);
-//		frame.getContentPane().add(btnNewButton);
-//		
+
 		s1 = new JTextField();
 		s1.setBounds(263, 147, 131, 30);
 		frame.getContentPane().add(s1);
