@@ -64,6 +64,15 @@ public class access {
 		frame.getContentPane().add(t1);
 		t1.setColumns(10);
 		
+		t2 = new JTextField();
+		t2.setBounds(269, 307, 119, 38);
+		frame.getContentPane().add(t2);
+		t2.setColumns(10);
+		
+		t3 = new JTextField();
+		t3.setColumns(10);
+		t3.setBounds(269, 379, 119, 38);
+		frame.getContentPane().add(t3);
 		JButton btnNewButton = new JButton("Click");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -78,7 +87,7 @@ public class access {
 					ResultSet rs=ps.executeQuery();
 					rs.next();
 					t2.setText(rs.getString(1));
-//					t3.setText( rs.getFloat(2));
+					t3.setText(""+rs.getFloat(2));
 					
 				} catch (SQLException e1) {
 					// TODO Auto-generated catch block
@@ -100,16 +109,12 @@ public class access {
 		lblNewLabel_1_1.setFont(new Font("Arial", Font.BOLD, 20));
 		lblNewLabel_1_1.setBounds(127, 387, 84, 30);
 		frame.getContentPane().add(lblNewLabel_1_1);
+	
 		
-		t2 = new JTextField();
-		t2.setBounds(269, 307, 119, 38);
-		frame.getContentPane().add(t2);
-		t2.setColumns(10);
-		
-		t3 = new JTextField();
-		t3.setColumns(10);
-		t3.setBounds(269, 379, 119, 38);
-		frame.getContentPane().add(t3);
+		JLabel lblNewLabel_2 = new JLabel("Access form");
+		lblNewLabel_2.setFont(new Font("Arial Black", Font.BOLD, 35));
+		lblNewLabel_2.setBounds(253, 24, 266, 38);
+		frame.getContentPane().add(lblNewLabel_2);
 	}
 
 }
